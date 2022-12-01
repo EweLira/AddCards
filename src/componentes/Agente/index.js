@@ -1,15 +1,15 @@
 import './Agente.css'
 
-const Agente = () => {
+const Agente = ({nome, imagem, cargo, corDeFundo }) => {
     return (
         <div className='agente'>
 
-            <div className='cabecalho'>
-                <img src='https://tm.ibxk.com.br/2020/06/01/01124655734193.jpg' alt='Reyna' />
+            <div className='cabecalho' style={{ backgroundColor: corDeFundo}}>
+                <img src={imagem} alt={nome} />
             </div>
             <div className='rodape'>
-                <h4>Reyna</h4>
-                <h5>Radiante</h5>
+                <h4>{nome}</h4>
+                <h5>{cargo}</h5>
             </div>
 
         </div>
